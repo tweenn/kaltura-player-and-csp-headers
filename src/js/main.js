@@ -3,7 +3,7 @@ import htm from 'https://unpkg.com/htm?module';
 const html = htm.bind(h);
 
 render(createElement(() => {
-	const sufix = document.location.hostname === 'localhost' ? './' : './kaltura-player-and-csp-headers/';
+	const sufix = document.location.hostname === 'localhost' ? '/' : '/kaltura-player-and-csp-headers/';
 	return html`
 		<bx-header aria-label="IBM Platform Name">
 			<bx-header-name href="${sufix}" prefix="IBM">
