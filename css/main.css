@@ -1,0 +1,20 @@
+
+.bx--grid {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.bx--col p {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.bx--row + .bx--row {
+	padding-top: 4rem;
+}
+
+iframe {
+	width: 100%;
+	aspect-ratio: 16/9;
+	border: 0;
+}
