@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Player CSP Test</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://www.ibm.com/favicon.ico"
+		/>
+
+		<script src="./js/main.js" type="module" defer></script>
+		<script src="./js/youtube.js"></script>
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- COMPONENTS, GRID & FONTS -->
+		<link
+			rel="stylesheet"
+			href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/grid.css"
+		/>
+		<script
+			type="module"
+			src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/ui-shell.min.js"
+		></script>
+
+		<!-- KALTURA PLAYER -->
+		<script src="https://www.kaltura.com/p/811441/sp/81144100/embedIframeJs/uiconf_id/40430081/partner_id/811441"></script>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="
+			default-src
+				'self'
+				1.www.s81c.com
+				unpkg.com
+
+				*.youtube.com
+				*.ytimg.com
+			"
+		/>
+	</head>
+	<body>
+		<div id="header"></div>
+
+		<div class="bx--grid">
+			<div class="bx--row">
+				<div class="bx--col">
+					<p>Youtube API Player</p>
+					<div id="myEmbedTarget"></div>
+				</div>
+				<div class="bx--col">
+					<p>Youtube iFrame Player</p>
+					<iframe
+						src="https://www.youtube.com/embed/cxYlEQtJDE8"
+						title="YouTube video player"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
