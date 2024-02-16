@@ -1,0 +1,24 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  push-dir:
+    specifier: ^0.4.1
+    version: 0.4.1
+
+packages:
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: true
+
+  /push-dir@0.4.1:
+    resolution: {integrity: sha512-Nrrsly0c3kCfu725Jnif/s5adHpBwKCGWBttHVxTndF4iyGBSFtNi/pduFxHF5ks0kWtHcbA3XXP5MEra6iiCA==}
+    engines: {node: '>=0.12'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+    dev: true
