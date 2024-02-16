@@ -3,27 +3,37 @@ import htm from 'https://unpkg.com/htm?module';
 const html = htm.bind(h);
 
 render(createElement(() => {
-	const sufix = document.location.hostname === 'localhost' ? '/' : '/kaltura-player-and-csp-headers/';
+	const sufix = [
+		'localhost',
+		'zuntini.ibm.com'
+	].includes(document.location.hostname)
+		? '/'
+		: '/kaltura-player-and-csp-headers/';
 	return html`
-		<bx-header aria-label="IBM Platform Name">
-			<bx-header-name href="${sufix}" prefix="IBM">
+		<cds-header aria-label="IBM Platform Name">
+			<cds-header-name href="${sufix}" prefix="IBM">
 				Player Test
-			</bx-header-name>
-			<bx-header-nav menu-bar-label="IBM [Platform]">
-				<bx-header-nav-item href="${sufix}">
+			</cds-header-name>
+			<cds-header-nav menu-bar-label="IBM [Platform]">
+				<cds-header-nav-item href="${sufix}">
 					Kaltura NO CSP
-				</bx-header-nav-item>
-			</bx-header-nav>
-			<bx-header-nav menu-bar-label="IBM [Platform]">
-				<bx-header-nav-item href="${sufix}kaltura-with-csp.html">
-					Kaltura With CSP
-				</bx-header-nav-item>
-			</bx-header-nav>
-			<bx-header-nav menu-bar-label="IBM [Platform]">
-				<bx-header-nav-item href="${sufix}youtube-with-csp.html">
+				</cds-header-nav-item>
+			</cds-header-nav>
+			<cds-header-nav menu-bar-label="IBM [Platform]">
+				<cds-header-nav-item href="${sufix}kaltura-with-safe-csp.html">
+					Kaltura With Safe CSP
+				</cds-header-nav-item>
+			</cds-header-nav>
+			<cds-header-nav menu-bar-label="IBM [Platform]">
+				<cds-header-nav-item href="${sufix}kaltura-with-unsafe-csp.html">
+					Kaltura With UnSafe CSP
+				</cds-header-nav-item>
+			</cds-header-nav>
+			<cds-header-nav menu-bar-label="IBM [Platform]">
+				<cds-header-nav-item href="${sufix}youtube-with-csp.html">
 					YouTube With CSP
-				</bx-header-nav-item>
-			</bx-header-nav>
-		</bx-header>
+				</cds-header-nav-item>
+			</cds-header-nav>
+		</cds-header>
 	`;
 }), document.getElementById('header'));

@@ -13,6 +13,10 @@
 	padding-top: 4rem;
 }
 
+cds-header-nav + cds-header-nav {
+	padding-left: 1px !important;
+}
+
 iframe {
 	width: 100%;
 	aspect-ratio: 16/9;

@@ -12,7 +12,7 @@
 		/>
 
 		<script src="./js/main.js" type="module" defer></script>
-		<script src="./js/youtube.js"></script>
+		<script src="./js/kaltura.js"></script>
 
 		<link rel="stylesheet" href="./css/main.css" />
 
@@ -42,11 +42,11 @@
 			content="
 				default-src
 				'self'
-				1.www.s81c.com
 				unpkg.com
-
-				*.youtube.com
-				*.ytimg.com
+				1.www.s81c.com
+				*.kaltura.com
+				*.ibm.com
+				blob:
 			"
 		/>
 	</head>
@@ -56,16 +56,21 @@
 		<div class="bx--grid">
 			<div class="bx--row">
 				<div class="bx--col">
-					<p>Youtube API Player</p>
+					<p>Kaltura Widget Player</p>
 					<div id="myEmbedTarget"></div>
 				</div>
+
 				<div class="bx--col">
-					<p>Youtube iFrame Player</p>
+					<p>Kaltura iFrame Player</p>
 					<iframe
-						src="https://www.youtube.com/embed/CNRavTdSN5E"
-						title="YouTube video player"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						title="Kaltura Test Video"
+						src="https://www.kaltura.com/p/811441/sp/81144100/embedIframeJs/uiconf_id/40430081/partner_id/811441?iframeembed=true&entry_id=1_p59fv7ur"
 						allowfullscreen
+						webkitallowfullscreen
+						mozAllowFullScreen
+						allow="autoplay *; fullscreen *; encrypted-media *"
+						sandbox="allow-same-origin allow-scripts allow-top-navigation allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+						referrerpolicy="origin-when-cross-origin"
 					></iframe>
 				</div>
 			</div>
