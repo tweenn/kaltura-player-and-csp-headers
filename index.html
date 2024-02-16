@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Player CSP Test</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://www.ibm.com/favicon.ico"
+		/>
+
+		<script src="./js/main.js" type="module" defer></script>
+		<script src="./js/kaltura.js"></script>
+
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- COMPONENTS, GRID & FONTS -->
+		<link
+			rel="stylesheet"
+			href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/grid.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/themes.css"
+		/>
+		<script
+			type="module"
+			src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/ui-shell.min.js"
+		></script>
+
+		<!-- KALTURA PLAYER -->
+		<script src="https://www.kaltura.com/p/811441/sp/81144100/embedIframeJs/uiconf_id/40430081/partner_id/811441"></script>
+	</head>
+	<body class="cds-theme-zone-g10">
+		<div id="header"></div>
+
+		<div class="bx--grid">
+			<div class="bx--row">
+				<div class="bx--col">
+					<p>Kaltura Widget Player</p>
+					<div id="myEmbedTarget"></div>
+				</div>
+				<div class="bx--col">
+					<p>Kaltura iFrame Player</p>
+					<iframe
+						title="Kaltura Test Video"
+						src="https://www.kaltura.com/p/811441/sp/81144100/embedIframeJs/uiconf_id/40430081/partner_id/811441?iframeembed=true&entry_id=1_p59fv7ur"
+						allowfullscreen
+						webkitallowfullscreen
+						mozAllowFullScreen
+						allow="autoplay *; fullscreen *; encrypted-media *"
+						sandbox="allow-same-origin allow-scripts allow-top-navigation allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+						referrerpolicy="origin-when-cross-origin"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
